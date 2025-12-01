@@ -1,5 +1,3 @@
-const PIXABAY_KEY = "52695997-0886cb71a17be0aabb430bde6";
-
 let plantes = [];
 
 const mapping = {
@@ -436,25 +434,12 @@ form.addEventListener("submit", function (e) {
 
     // Fonction d'affichage commune
 const displayPlantCard = (plant, container, checked = false) => {
-    // Construire le nom de fichier basé sur la colonne Name sans espaces
-    const fileName = plant.Name.replace(/\s+/g, '') + '.jpg';
-    const imagePath = `images_plantes/${fileName}`;
-    
-    // Essayer d'abord l'image locale
-    const testImage = new Image();
-    testImage.onload = function() {
-        // Image locale existe - l'utiliser
-        createCard(plant, imagePath, container, checked);
-    };
-    testImage.onerror = function() {
-        // Image locale n'existe pas - utiliser le fallback
-        let fallbackUrl = "no-picture-picture.png";
-        if (plant.Photo && plant.Photo.trim()) {
-            fallbackUrl = plant.Photo;
-        }
-        createCard(plant, fallbackUrl, container, checked);
-    };
-    testImage.src = imagePath;
+    // utiliser l'URL Cloudinary du JSON
+    let imageUrl = "no-picture-picture.png";  // fallback
+    if (plant.photo_url && plant.photo_url.trim() !== "") {
+        imageUrl = plant.photo_url;
+    }
+    createCard(plant, imageUrl, container, checked);
 };
 
 // Fonction séparée pour créer la carte (évite la duplication de code)
@@ -533,4 +518,5 @@ function backToForm() {
     
     // Remonter en haut de la page
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
 }
