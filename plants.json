@@ -25,35 +25,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584173/acacia_yilnya.jpg"
-    },
-    {
-        "Name": "wattle",
-        "Nom": "Acacia",
-        "Growth": 1,
-        "Soil": 0,
-        "Sunlight": 2,
-        "Watering": 1,
-        "Fertilization": 0,
-        "Life_cycle": 2,
-        "Type_subshrub": 0,
-        "Type_climbing": 0,
-        "Type_succulent": 0,
-        "Type_tree": 1,
-        "Type_epiphytic": 0,
-        "Type_shrub": 0,
-        "Type_herbaceous": 0,
-        "Usage_industrial": 1,
-        "Usage_ornamental": 0,
-        "Usage_aromatic": 0,
-        "Usage_medicinal": 0,
-        "Usage_melliferae": 1,
-        "Usage_fodder": 0,
-        "Usage_vegetable": 0,
-        "Usage_fruit": 0,
-        "Usage_spice": 0,
-        "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585850/wattle_rsclro.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933533/acacia_rkovy5.jpg"
     },
     {
         "Name": "acalypha",
@@ -333,7 +305,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584198/amaranth_vdhm1w.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933533/amaranth_s0p3hi.jpg"
     },
     {
         "Name": "amaryllis",
@@ -949,7 +921,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585087/lotusbamboo_awcpl2.jpg"
+        "photo_url": ""
     },
     {
         "Name": "banana plant",
@@ -1033,7 +1005,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584227/basil_pfaaeh.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933534/basil_nccivz.jpg"
     },
     {
         "Name": "beggonia",
@@ -1061,7 +1033,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": ""
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933570/beggonia_rukgdm.jpg"
     },
     {
         "Name": "ber tree (indian jujube)",
@@ -1341,7 +1313,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585588/riverbirch_uskgzn.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933958/riverbirch_yfcxoe.jpg"
     },
     {
         "Name": "borage",
@@ -1789,7 +1761,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585753/sugarcane_cbotis.jpg"
+        "photo_url": ""
     },
     {
         "Name": "rubber plant",
@@ -1873,7 +1845,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584518/carrot_mmy15e.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933575/carrot_xfe0l1.jpg"
     },
     {
         "Name": "carob tree",
@@ -2069,7 +2041,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584539/chayote_giy1kr.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933586/chayote_hsqkzc.jpg"
     },
     {
         "Name": "cabbage",
@@ -2461,7 +2433,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585739/stringofpearls_mj9oik.jpg"
+        "photo_url": ""
     },
     {
         "Name": "cucumber",
@@ -2657,7 +2629,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584585/cosmos_tobgj9.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933795/cosmos_pdrivy.jpg"
     },
     {
         "Name": "butternut squash",
@@ -3413,7 +3385,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585793/tarragon_qw1uhi.jpg"
+        "photo_url": ""
     },
     {
         "Name": "eucalyptus",
@@ -3441,7 +3413,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584642/eucalyptus_erbniz.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933796/eucalyptus_lpedlx.jpg"
     },
     {
         "Name": "euphorbia",
@@ -3497,7 +3469,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584656/fennel_ygtmfn.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933817/fennel_yisv99.jpg"
     },
     {
         "Name": "ice plant",
@@ -4729,7 +4701,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585884/zebragrass_kcukfo.jpg"
+        "photo_url": ""
     },
     {
         "Name": "zoysia grass",
@@ -5625,7 +5597,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584656/fairylantern_pnd5q1.jpg"
+        "photo_url": ""
     },
     {
         "Name": "bay laurel",
@@ -5793,7 +5765,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584954/ivy_y5rkti.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933818/ivy_evl2hi.jpg"
     },
     {
         "Name": "devils ivy",
@@ -5849,7 +5821,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585757/swedishivy_ymscij.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764934603/swedishivy_pwqyqm.jpg"
     },
     {
         "Name": "lilac",
@@ -6101,7 +6073,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584550/chineselanternplant_uxad7n.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933591/chineselanternplant_o8d0m1.jpg"
     },
     {
         "Name": "aztec lily",
@@ -6186,34 +6158,6 @@
         "Usage_spice": 0,
         "Usage_oil": 0,
         "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585093/magnolia_ry9jbt.jpg"
-    },
-    {
-        "Name": "corn",
-        "Nom": "Maïs",
-        "Growth": 2,
-        "Soil": 2,
-        "Sunlight": 2,
-        "Watering": 3,
-        "Fertilization": 4,
-        "Life_cycle": 0,
-        "Type_subshrub": 0,
-        "Type_climbing": 0,
-        "Type_succulent": 0,
-        "Type_tree": 0,
-        "Type_epiphytic": 0,
-        "Type_shrub": 0,
-        "Type_herbaceous": 1,
-        "Usage_industrial": 0,
-        "Usage_ornamental": 0,
-        "Usage_aromatic": 0,
-        "Usage_medicinal": 0,
-        "Usage_melliferae": 0,
-        "Usage_fodder": 0,
-        "Usage_vegetable": 1,
-        "Usage_fruit": 0,
-        "Usage_spice": 0,
-        "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584580/corn_ckazzs.jpg"
     },
     {
         "Name": "malva (mallow)",
@@ -6493,7 +6437,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585116/mallow_ezptlf.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933840/mallow_m1hphp.jpg"
     },
     {
         "Name": "lemon balm",
@@ -6605,7 +6549,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585850/wanderingjew_er6wjy.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764934604/wanderingjew_kjmbfh.jpg"
     },
     {
         "Name": "bee balm",
@@ -6633,7 +6577,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584236/beebalm_cp70ex.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933569/beebalm_pjaqoq.jpg"
     },
     {
         "Name": "monstera",
@@ -6941,7 +6885,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585457/nutmeg_s20uir.jpg"
+        "photo_url": ""
     },
     {
         "Name": "carnation",
@@ -7053,7 +6997,7 @@
         "Usage_fruit": 1,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585457/olivetree_l4naxo.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933840/olivetree_bceapk.jpg"
     },
     {
         "Name": "bamboo orchid",
@@ -7249,7 +7193,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585236/moneyplant_krkax0.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933840/moneyplant_cuatds.jpg"
     },
     {
         "Name": "bamboo palm",
@@ -7389,7 +7333,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585607/sagopalm_iafekv.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933958/sagopalm_xhesg3.jpg"
     },
     {
         "Name": "sea holly",
@@ -7557,7 +7501,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585487/peperomia_uwmtqk.jpg"
+        "photo_url": ""
     },
     {
         "Name": "snowdrop",
@@ -7613,7 +7557,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585458/parsley_jgkl7l.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933846/parsley_gxcsn7.jpg"
     },
     {
         "Name": "periwinkle",
@@ -7725,7 +7669,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585506/philodendron_jvtp1t.jpg"
+        "photo_url": ""
     },
     {
         "Name": "phlox",
@@ -7809,7 +7753,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585506/pilea_vs3ra0.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933864/pilea_p8qdn1.jpg"
     },
     {
         "Name": "chili pepper",
@@ -7893,7 +7837,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584603/dandelion_v1vohu.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933795/dandelion_texpdi.jpg"
     },
     {
         "Name": "peony",
@@ -7925,7 +7869,7 @@
     },
     {
         "Name": "tobacco plant",
-        "Nom": "Plant de tabac",
+        "Nom": "Plante cigarette",
         "Growth": 2,
         "Soil": 2,
         "Sunlight": 2,
@@ -7977,7 +7921,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585726/spiderplant_uocaoc.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933958/spiderplant_orqxjy.jpg"
     },
     {
         "Name": "jade plant",
@@ -8006,34 +7950,6 @@
         "Usage_spice": 0,
         "Usage_oil": 0,
         "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584960/jadeplant_kgytgs.jpg"
-    },
-    {
-        "Name": "succulent",
-        "Nom": "Plante grasse",
-        "Growth": 0,
-        "Soil": 0,
-        "Sunlight": 2,
-        "Watering": 1,
-        "Fertilization": 2,
-        "Life_cycle": 2,
-        "Type_subshrub": 0,
-        "Type_climbing": 0,
-        "Type_succulent": 1,
-        "Type_tree": 0,
-        "Type_epiphytic": 0,
-        "Type_shrub": 0,
-        "Type_herbaceous": 0,
-        "Usage_industrial": 0,
-        "Usage_ornamental": 1,
-        "Usage_aromatic": 0,
-        "Usage_medicinal": 0,
-        "Usage_melliferae": 0,
-        "Usage_fodder": 0,
-        "Usage_vegetable": 0,
-        "Usage_fruit": 0,
-        "Usage_spice": 0,
-        "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585752/succulent_i14oxc.jpg"
     },
     {
         "Name": "snake plant",
@@ -8089,7 +8005,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585885/zebraplant_gdrenr.jpg"
+        "photo_url": ""
     },
     {
         "Name": "zz plant",
@@ -8173,7 +8089,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584220/balloonflower_eh3uus.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933533/balloonflower_occlh5.jpg"
     },
     {
         "Name": "mayapple",
@@ -8257,7 +8173,7 @@
         "Usage_fruit": 1,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585487/pepperplant_nkihuo.jpg"
+        "photo_url": ""
     },
     {
         "Name": "red hot poker (kniphofia)",
@@ -8481,7 +8397,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585542/protea_z8c8tw.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933957/protea_wsx9bs.jpg"
     },
     {
         "Name": "quinoa",
@@ -8509,7 +8425,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585543/quinoa_sena01.jpg"
+        "photo_url": ""
     },
     {
         "Name": "radish",
@@ -8537,7 +8453,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585543/radish_bzpd0a.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933957/radish_s4u1ou.jpg"
     },
     {
         "Name": "rhododendron",
@@ -8621,7 +8537,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585588/rosemarymint_xlzvs8.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933958/rosemarymint_tljqqr.jpg"
     },
     {
         "Name": "rose of sharon",
@@ -9125,7 +9041,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585726/stevia_w7vfc6.jpg"
+        "photo_url": ""
     },
     {
         "Name": "elderberry",
@@ -9209,7 +9125,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585793/taro_hb5myo.jpg"
+        "photo_url": ""
     },
     {
         "Name": "teak",
@@ -9237,7 +9153,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585794/teak_rd4g4k.jpg"
+        "photo_url": ""
     },
     {
         "Name": "themeda (kangaroo grass)",
@@ -9293,7 +9209,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585794/thyme_mfvvgq.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764934603/thyme_gqegkb.jpg"
     },
     {
         "Name": "tomato",
@@ -9321,7 +9237,7 @@
         "Usage_fruit": 1,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585831/tomato_buh2lg.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764934604/tomato_j1sxqs.jpg"
     },
     {
         "Name": "jerusalem artichoke",
@@ -9405,7 +9321,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584567/clover_kx14mr.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933627/clover_u4fvkb.jpg"
     },
     {
         "Name": "quaking aspen",
@@ -9741,7 +9657,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585526/potatovine_gs92ik.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764933888/potatovine_speyci.jpg"
     },
     {
         "Name": "viola",
@@ -9769,7 +9685,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585850/viola_nwthwr.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764934604/viola_pbourv.jpg"
     },
     {
         "Name": "violet",
@@ -9797,7 +9713,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585850/violet_ghrs9h.jpg"
+        "photo_url": ""
     },
     {
         "Name": "african violet",
@@ -9853,34 +9769,6 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585884/yucca_oan8ad.jpg"
-    },
-    {
-        "Name": "zea mays (corn)",
-        "Nom": "Zea mays (maïs)",
-        "Growth": 2,
-        "Soil": 2,
-        "Sunlight": 2,
-        "Watering": 2,
-        "Fertilization": 2,
-        "Life_cycle": 0,
-        "Type_subshrub": 0,
-        "Type_climbing": 0,
-        "Type_succulent": 0,
-        "Type_tree": 0,
-        "Type_epiphytic": 0,
-        "Type_shrub": 0,
-        "Type_herbaceous": 1,
-        "Usage_industrial": 1,
-        "Usage_ornamental": 0,
-        "Usage_aromatic": 0,
-        "Usage_medicinal": 0,
-        "Usage_melliferae": 0,
-        "Usage_fodder": 1,
-        "Usage_vegetable": 1,
-        "Usage_fruit": 0,
-        "Usage_spice": 0,
-        "Usage_oil": 0,
         "photo_url": ""
     },
     {
@@ -9909,6 +9797,6 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585914/zinnia_s2cjiv.jpg"
+        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764934666/zinnia_hhncsl.jpg"
     }
 ]
