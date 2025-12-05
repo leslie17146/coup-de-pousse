@@ -613,7 +613,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764585652/silverbelltree_hyl5rt.jpg"
+        "photo_url": ""
     },
     {
         "Name": "gumwood tree",
@@ -641,7 +641,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584855/gumwoodtree_hruqy9.jpg"
+        "photo_url": ""
     },
     {
         "Name": "armeria (thrift)",
@@ -4673,7 +4673,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584922/indiangrass_t85rqq.jpg"
+        "photo_url": ""
     },
     {
         "Name": "zebra grass",
@@ -9741,7 +9741,7 @@
         "Usage_fruit": 0,
         "Usage_spice": 0,
         "Usage_oil": 0,
-        "photo_url": "https://res.cloudinary.com/dsnbmqsfr/image/upload/v1764584173/africanviolet_m6swdt.jpg"
+        "photo_url": ""
     },
     {
         "Name": "yucca",
