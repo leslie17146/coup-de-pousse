@@ -39,73 +39,85 @@ body {
 }
 
 .menu {
-top: 20px;
-right: 10px;
-bottom: auto; 
-left: auto;   
-width: 20px;
-height: 10px;
-position: fixed;
-cursor: pointer;
-z-index: 10000;
+    top: 20px;
+    right: 10px;
+    bottom: auto; 
+    left: auto;   
+    width: 20px;
+    height: 10px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 10000;
 }
 
 .menu-button {
-position: fixed; 
-top: 20px;
-right: 10px;
-width: 70px;
-height: 70px;
-z-index: 10;
-display: flex;
+    position: fixed; 
+    top: 20px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    display: flex;
+}
+
+.menu-button::after {
+    content: "Menu";    
+    position: absolute;
+    bottom: -14px;            /* place le texte sous la feuille */
+    left: 40%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e6e0c;           /* vert */
+    font-family: "Segoe UI", sans-serif;
 }
 
 .menu-button img {
-width: 60px;
-height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .menu-item {
-width: 70px;
-height: 70px;
-top: 20px;
-right: 10px;
-position: fixed;   
-border-radius: 50%;
-background: linear-gradient(135deg, #3A7F0D, #8BC34A);
-display: flex;
-justify-content: center;
-align-items: center;
-transform: translate(0,0);
-transition: transform 0.4s ease;
-opacity: 0;
-pointer-events: none;
-z-index: 5;
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    right: 10px;
+    position: fixed;   
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3A7F0D, #8BC34A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0,0);
+    transition: transform 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
 }
 
 .menu-item img {
-width: 40px;
-height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .menu.active .menu-item {
-opacity: 1;
-pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .menu.active .menu-item:nth-child(2) {
-transform: translate(-120px, 0px);
+    transform: translate(-120px, 0px);
 }
 .menu.active .menu-item:nth-child(3) {
-transform: translate(-80px, 85px);
+    transform: translate(-80px, 85px);
 }
 .menu.active .menu-item:nth-child(4) {
-transform: translate(0px, 120px);
+    transform: translate(0px, 120px);
 }
 
 .menu-item:hover {
-background-color: #3A7F0D;
-box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background-color: #3A7F0D;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
 /* Formulaire amélioré */
@@ -300,6 +312,112 @@ input[type="checkbox"] {
 .form-step {
     position: relative;
     min-height: 300px;
+}
+
+/* Icône d'aide */
+.soil-help-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #3A7F0D, #8BC34A);
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: help;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.soil-help-btn:hover {
+  background: linear-gradient(135deg, #2e6e0c, #3A7F0D);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(58, 127, 13, 0.3);
+}
+
+/* Icône PNG */
+.info-icon-img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.soil-help-btn:hover .info-icon-img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Style spécifique pour l'aide sol */
+.soil-tips {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.soil-type, .soil-tip {
+  background: #f9fff9;
+  border: 1px solid #e8f5e8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.soil-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8f5e8;
+}
+
+.soil-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.soil-header h4 {
+  color: #3A7F0D;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.soil-details p {
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+.soil-details p strong {
+  color: #3A7F0D;
+}
+
+.soil-details ul {
+  margin: 8px 0 8px 20px;
+  padding: 0;
+}
+
+.soil-details li {
+  margin-bottom: 5px;
+  color: #666;
+  line-height: 1.4;
+  position: relative;
+}
+
+#closeSoilHelpBtn {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #F8F4A6;
+  cursor: pointer;
+  width: 100%;
 }
 
 /* Section des résultats */
@@ -554,6 +672,92 @@ fieldset:nth-child(4) { animation-delay: 0.4s; }
   vertical-align: middle;
 }
 
+/* Style pour la modale d'aide à la navigation */
+.navigation-tips {
+    background: #f9fff9;
+    border: 1px solid #e8f5e8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.navigation-tips h4 {
+    color: #3A7F0D;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e8f5e8;
+}
+
+.tip-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.tip-content {
+    flex: 1;
+}
+
+.tip-content strong {
+    color: #3A7F0D;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.tip-content span {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Option pour ne plus afficher */
+.dont-show-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e8f5e8;
+}
+
+.dont-show-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #3A7F0D;
+}
+
+.dont-show-option label {
+    color: #666;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    transform: none;
+}
+
+#closeNavigationHelpBtn {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #F8F4A6;
+  cursor: pointer;
+  width: 100%;
+}
 /* --- MODALE --- */
 .modal {
   display: none;
