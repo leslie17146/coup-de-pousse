@@ -77,6 +77,19 @@ header {
     display: flex;
 }
 
+.menu-button::after {
+    content: "Menu";    
+    position: absolute;
+    bottom: -14px;            /* place le texte sous la feuille */
+    left: 40%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e6e0c;           /* vert */
+    font-family: "Segoe UI", sans-serif;
+}
+
+
 .menu-button img {
     width: 60px;
     height: 60px;
