@@ -136,6 +136,32 @@ function prevStep() {
     }
 }
 
+// Fonction pour afficher l'aide sur les types de sol
+function showSoilHelp() {
+    const modal = document.getElementById("soilHelpModal");
+    
+    if (!modal) return;
+    
+    modal.classList.add("show");
+    modal.setAttribute("aria-hidden", "false");
+    
+    // Gestion de la fermeture
+    const closeModal = () => {
+        modal.classList.remove("show");
+        modal.setAttribute("aria-hidden", "true");
+        modal.onclick = null;
+    };
+    
+    // Boutons de fermeture
+    document.getElementById("closeSoilHelp").onclick = closeModal;
+    document.getElementById("closeSoilHelpBtn").onclick = closeModal;
+    
+    // Fermeture en cliquant hors de la modale
+    modal.onclick = (event) => { 
+        if (event.target === modal) closeModal(); 
+    };
+}
+
 // Fonction pour filtrer les plantes selon les réponses
 function filterPlants() {
     const formData = new FormData(document.getElementById('plante-form'));
@@ -342,6 +368,91 @@ function showPlantModal(plant, imageUrl) {
     }
 }
 
+// Fonction pour afficher la modale d'aide à la navigation
+function showNavigationHelpModal() {
+    const modal = document.getElementById("navigationHelpModal");
+    
+    if (!modal) return;
+    
+    modal.classList.add("show");
+    modal.setAttribute("aria-hidden", "false");
+    
+    // Gestion de la fermeture
+    const closeModal = () => {
+        modal.classList.remove("show");
+        modal.setAttribute("aria-hidden", "true");
+        modal.onclick = null;
+    };
+    
+    // Boutons de fermeture
+    document.getElementById("closeNavigationHelp").onclick = closeModal;
+    document.getElementById("closeNavigationHelpBtn").onclick = closeModal;
+    
+    // Fermeture en cliquant hors de la modale
+    modal.onclick = (event) => { 
+        if (event.target === modal) closeModal(); 
+    };
+}
+
+// Fonction pour détecter le défilement jusqu'à la section des résultats
+function setupScrollDetectionForHelp() {
+    const selectedSection = document.getElementById("selected-section");
+    
+    if (!selectedSection) return;
+    
+    // Indicateur pour ne pas réafficher plusieurs fois
+    let hasShownHelp = false;
+    
+    // Fonction pour vérifier la visibilité de la section
+    const checkSectionVisibility = () => {
+        if (hasShownHelp) return;
+        
+        const sectionRect = selectedSection.getBoundingClientRect();
+        
+        // Vérifier si la section est en haut de la fenêtre
+        // (le haut de la section est proche du haut de la fenêtre)
+        if (sectionRect.top <= 100 && sectionRect.bottom > 200) {
+            showNavigationHelpModal();
+            hasShownHelp = true;
+            
+            // Retirer l'écouteur pour ne pas réafficher
+            window.removeEventListener("scroll", scrollHandler);
+            window.removeEventListener("resize", resizeHandler);
+        }
+    };
+    
+    // Gérer le défilement
+    const scrollHandler = () => {
+        checkSectionVisibility();
+    };
+    
+    // Gérer le redimensionnement
+    const resizeHandler = () => {
+        checkSectionVisibility();
+    };
+    
+    // Ajouter les écouteurs d'événements
+    window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("resize", resizeHandler);
+    
+    // Vérifier immédiatement (au cas où l'utilisateur est déjà en bas)
+    setTimeout(checkSectionVisibility, 100);
+    
+    // Nettoyage si l'utilisateur retourne au formulaire
+    const backButton = document.querySelector(".back-to-form-btn");
+    if (backButton) {
+        const originalClick = backButton.onclick;
+        backButton.onclick = function() {
+            // Nettoyer les écouteurs
+            window.removeEventListener("scroll", scrollHandler);
+            window.removeEventListener("resize", resizeHandler);
+            
+            // Appeler la fonction originale
+            if (originalClick) originalClick();
+        };
+    }
+}
+
 // Menu radial
 function toggleMenu() {
     document.getElementById("radialMenu").classList.toggle("active");
@@ -433,20 +544,20 @@ form.addEventListener("submit", function (e) {
     othersSection.appendChild(othersGallery);
 
     // Fonction d'affichage commune
-const displayPlantCard = (plant, container, checked = false) => {
-    // utiliser l'URL Cloudinary du JSON
-    let imageUrl = "no-picture-picture.png";  // fallback
-    if (plant.photo_url && plant.photo_url.trim() !== "") {
-        imageUrl = plant.photo_url;
-    }
-    createCard(plant, imageUrl, container, checked);
-};
+    const displayPlantCard = (plant, container, checked = false) => {
+        // utiliser l'URL Cloudinary du JSON
+        let imageUrl = "no-picture-picture.png";  // fallback
+        if (plant.photo_url && plant.photo_url.trim() !== "") {
+            imageUrl = plant.photo_url;
+        }
+        createCard(plant, imageUrl, container, checked);
+    };
 
-// Fonction séparée pour créer la carte (évite la duplication de code)
-const createCard = (plant, imageUrl, container, checked = false) => {
-    const waterIcons = getWaterIcons(plant.Watering);
-    const sunIcons = getSunIcons(plant.Sunlight);
-    const lifeCycleText = getLifeCycle(plant.Life_cycle);
+    // Fonction séparée pour créer la carte (évite la duplication de code)
+    const createCard = (plant, imageUrl, container, checked = false) => {
+        const waterIcons = getWaterIcons(plant.Watering);
+        const sunIcons = getSunIcons(plant.Sunlight);
+        const lifeCycleText = getLifeCycle(plant.Life_cycle);
 
     const card = document.createElement("div");
     card.className = "plant-card";
@@ -494,14 +605,19 @@ const createCard = (plant, imageUrl, container, checked = false) => {
         }
     });
 
-    container.appendChild(card);
-};
+        container.appendChild(card);
+    };
 
-    // Affiche les résultats sélectionnés 
+        // Affiche les résultats sélectionnés 
     resultat.forEach(plant => displayPlantCard(plant, selectedGallery, true));
 
     // Affiche les autres plantes 
     autres.forEach(plant => displayPlantCard(plant, othersGallery, false));
+    
+    // Attendre que le DOM soit mis à jour avant de configurer la détection
+    setTimeout(() => {
+        setupScrollDetectionForHelp();
+    }, 100);
 });
 
 // Fonction pour revenir au formulaire
