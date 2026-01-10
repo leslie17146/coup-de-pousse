@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Coup de pousse - L'Outil</title>
+  <link rel="stylesheet" href="static/css/tool.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="static/images/leaf.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+
+  <h1 class="title">Trouvez vos plantes idéales</h1>
+
+  <section class="accueil">
+    <ul class="menu" id="radialMenu">
+        <div class="menu-button" onclick="toggleMenu()">
+            <img src="static/images/leaf.png" alt="Menu">
+        </div>
+
+        <li class="menu-item"><a href="index.html"><img src="static/images/icons8-home-144.png" alt="Accueil"></a></li>
+        <li class="menu-item"><a href="tool.html"><img src="static/images/icons8-leaf-96.png" alt="L'outil"></a></li>
+        <li class="menu-item"><a href="about.html"><img src="static/images/icons8-information-96.png" alt="A propos"></a></li>
+    </ul>
+  </section>
+
+  <!-- Survey -->
+  <form id="plante-form">
+
+    <!-- Step 1 - Garden type -->
+    <div class="form-step" id="step-1">
+      <fieldset>
+        <legend>Vous souhaitez cultiver vos plantes :</legend>
+        <label><input type="radio" name="type_jardin" value="pot" required> En pot</label>
+        <label><input type="radio" name="type_jardin" value="terre" required> En terre</label>
+        <label><input type="radio" name="type_jardin" value="les_deux" required> Les deux</label>
+      </fieldset>
+      <div class="button-group">
+        <button type="button" class="button next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Step 2 - Exposition -->
+    <div class="form-step" id="step-2">
+      <fieldset>
+        <legend>Comment est exposé ton jardin ?</legend>
+        <label><input type="radio" name="exposition" value="soleil_constant" required> Il est constamment au Soleil (> 6h)</label>
+        <label><input type="radio" name="exposition" value="soleil_partiel" required> Il est au soleil la plupart du temps (entre 3h et 6h de Soleil)</label>
+        <label><input type="radio" name="exposition" value="peu_soleil" required> Il n'est pas au Soleil (< 3h)</label>
+      </fieldset>
+      <div class="button-group">
+        <button type="button" class="button next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Step 3 - Watering -->
+    <div class="form-step" id="step-3">
+      <fieldset>
+        <legend>À quelle fréquence voulez-vous arroser votre jardin ?</legend>
+        <label><input type="radio" name="arrosage" value="faible" required> Le moins possible</label>
+        <label><input type="radio" name="arrosage" value="modéré" required> Tous les deux ou trois jours</label>
+        <label><input type="radio" name="arrosage" value="important" required> Ça m'est égal</label>
+      </fieldset>
+      <div class="button-group">
+        <button type="button" class="button next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Step 4 - Soil -->
+    <div class="form-step" id="step-4">
+      <fieldset>
+        <legend>
+        Quel type de sol ? 
+        <button type="button" class="soil-help-btn" onclick="showSoilHelp()">
+        <img src="static/images/icons8-information-96.png" alt="Informations" class="info-icon-img">
+      </button>
+      </legend>
+        <label><input type="checkbox" name="sol" value="drainé" data-required="true"> Sol bien drainé</label>
+        <label><input type="checkbox" name="sol" value="sableux" data-required="true"> Sol sableux</label>
+        <label><input type="checkbox" name="sol" value="limoneux" data-required="true"> Sol limoneux</label>
+        <label><input type="checkbox" name="sol" value="humide" data-required="true"> Sol humide</label>
+        <label><input type="checkbox" name="sol" value="acide" data-required="true"> Sol acide</label>
+      </fieldset>
+      <div class="button-group">
+        <button type="button" class="button next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Modal window to help to choose a soil type -->
+    <div id="soilHelpModal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <span class="close" id="closeSoilHelp">&times;</span>
+        <div id="soilHelpTitle">
+          <h2>Comment reconnaître le type de sol ?</h2>
+          <h3>Guide pratique</h3>
+        </div>
+        <div id="soilHelpContent">
+          <div class="soil-tips">
+            
+            <div class="soil-type">
+              <div class="soil-header">
+                <span class="soil-icon">🌱</span>
+                <h4>1. Sol bien drainé</h4>
+              </div>
+              <div class="soil-details">
+                <p><strong>Caractéristiques :</strong> L'eau ne stagne pas à la surface, elle s'infiltre facilement mais sans disparaître trop vite.</p>
+                <p><strong>Comment le reconnaître ?</strong></p>
+                <ul>
+                  <li>Après une pluie, les flaques disparaissent rapidement (quelques heures)</li>
+                  <li>Quand tu arroses, la terre boit l'eau mais reste légèrement humide</li>
+                  <li>Les plantes ne jaunissent pas par excès d'eau</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="soil-type">
+              <div class="soil-header">
+                <span class="soil-icon">🏖️</span>
+                <h4>2. Sol sableux</h4>
+              </div>
+              <div class="soil-details">
+                <p><strong>Caractéristiques :</strong> Léger, granuleux, pauvre en nutriments, il sèche très vite.</p>
+                <p><strong>Comment le reconnaître ?</strong></p>
+                <ul>
+                  <li>Quand tu le prends en main, il s'effrite et glisse entre les doigts</li>
+                  <li>Il est très facile à creuser</li>
+                  <li>Après l'arrosage, l'eau disparaît presque aussitôt</li>
+                  <li>Les plantes peuvent sembler avoir souvent soif</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="soil-type">
+              <div class="soil-header">
+                <span class="soil-icon">🌾</span>
+                <h4>3. Sol limoneux / Terre franche</h4>
+              </div>
+              <div class="soil-details">
+                <p><strong>Caractéristiques :</strong> C'est le "sol idéal", un mélange équilibré de sable, d'argile et de matière organique.</p>
+                <p><strong>Comment le reconnaître ?</strong></p>
+                <ul>
+                  <li>Quand tu le presses dans la main, il se compacte un peu mais s'effrite facilement</li>
+                  <li>Sa couleur est souvent brun foncé</li>
+                  <li>Il retient bien l'humidité sans être détrempé</li>
+                  <li>Les plantes poussent facilement, sans effort particulier</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="soil-type">
+              <div class="soil-header">
+                <span class="soil-icon">💧</span>
+                <h4>4. Sol humide</h4>
+              </div>
+              <div class="soil-details">
+                <p><strong>Caractéristiques :</strong> Reste souvent mouillé, l'eau s'accumule, risque d'asphyxier les racines.</p>
+                <p><strong>Comment le reconnaître ?</strong></p>
+                <ul>
+                  <li>Il colle aux doigts quand tu le touches</li>
+                  <li>Tu peux y voir des mousses ou même des zones boueuses</li>
+                  <li>L'eau stagne longtemps après une pluie ou un arrosage</li>
+                  <li>Certaines plantes jaunissent ou pourrissent à cause de trop d'eau</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="soil-type">
+              <div class="soil-header">
+                <span class="soil-icon">🍋</span>
+                <h4>5. Sol acide</h4>
+              </div>
+              <div class="soil-details">
+                <p><strong>Caractéristiques :</strong> pH faible (inférieur à 6), souvent pauvre en certains nutriments.</p>
+                <p><strong>Comment le reconnaître ?</strong></p>
+                <ul>
+                  <li>Certaines plantes comme les hortensias deviennent bleues, les rhododendrons et bruyères s'y plaisent</li>
+                  <li>Présence possible de mousse, surtout si le sol est aussi humide</li>
+                  <li>Si tu utilises un test de sol (pH test en jardinerie), il sera inférieur à 6</li>
+                  <li>La terre peut sembler légère mais moins fertile pour certaines cultures (tomates, légumes classiques)</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="soil-tip">
+              <div class="soil-header">
+                <span class="soil-icon">💡</span>
+                <h4>Astuce supplémentaire</h4>
+              </div>
+              <div class="soil-details">
+                <p><strong>Si vous avez du terreau :</strong> Sélectionnez "Sol bien drainé". Le terreau est spécialement conçu pour avoir une excellente drainage tout en retenant suffisamment d'humidité.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <button id="closeSoilHelpBtn">J'ai compris, merci !</button>
+      </div>
+    </div>
+
+    <!-- Step 5 - Vegetables -->
+    <div class="form-step" id="step-5">
+      <fieldset>
+        <legend>Souhaitez-vous cultiver un potager ?</legend>
+        <label><input type="radio" name="potager" value="oui" required> Oui</label>
+        <label><input type="radio" name="potager" value="non" required> Non</label>
+      </fieldset>
+      <div class="button-group">
+        <button type="button" class="button next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Step 6 - Trees -->
+    <div class="form-step" id="step-6">
+      <fieldset>
+        <legend>Voulez-vous des arbres dans votre jardin ?</legend>
+        <label><input type="radio" name="arbres" value="oui" required> Oui</label>
+        <label><input type="radio" name="arbres" value="non" required> Non</label>
+      </fieldset>
+      <div class="button-group">
+        <button type="button" class="button next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Step 7 - Style -->
+    <div class="form-step" id="step-7">
+      <fieldset>
+        <legend>Comment souhaites-tu aménager ton jardin ?</legend>
+        <label><input type="radio" name="style" value="francais" required> À la française</label>
+        <label><input type="radio" name="style" value="anglais" required> À l'anglaise</label>
+        <label><input type="radio" name="style" value="japonais" required> À la japonaise</label>
+        <label><input type="radio" name="style" value="mediterraneen" required> À la méditerranéenne</label>
+        <label><input type="radio" name="style" value="contemporain" required> Contemporain</label>
+        <label><input type="radio" name="style" value="autre" required> Je n'ai pas de préférence</label>
+      </fieldset>
+      <div class="button-group">
+        <button type="button" class="button next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Step 8 - Dimensions -->
+    <div class="form-step" id="step-8">
+      <fieldset>
+        <legend>Les dimensions du jardin ou de la cour :</legend>
+        <div class="dimensions-group">
+          <label>Largeur : 
+            <input type="number" name="largeur" min="0" placeholder="m" required>
+          </label>
+          <label>Longueur : 
+            <input type="number" name="longueur" min="0" placeholder="m" required>
+          </label>
+        </div>
+      </fieldset>
+      <div class="button-group">
+        <button type="submit" class="button submit-btn">Terminer</button>
+      </div>
+    </div>
+  </form>
+
+  <div id="resultats"></div>
+
+  <section id="selected-section">
+    <div class="gallery" id="gallery-selected"></div>
+  </section>
+
+  <section id="others-section">
+    <div class="gallery" id="gallery-others"></div>
+  </section>
+
+  <!-- Modal window to explain how to surf on the page -->
+  <div id="navigationHelpModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <span class="close" id="closeNavigationHelp">&times;</span>
+      <div id="navigationHelpTitle">
+        <h2>Explorez vos résultats</h2>
+        <h3>Comment naviguer dans la liste de plantes ?</h3>
+      </div>
+      <div id="navigationHelpContent">        
+        <div class="navigation-tips">
+          <h4>Astuces de navigation</h4>
+          <div class="tips-grid">
+            <div class="tip-item">
+              <div class="tip-icon">📖</div>
+              <div class="tip-content">
+                <strong>Se renseigner</strong>
+                <span>Cliquez sur une plante pour connaître toutes ses caractéristiques.</span>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">✅</div>
+              <div class="tip-content">
+                <strong>Sélectionner</strong>
+                <span>Cochez les plantes qui vous intéressent pour les ajouter à votre liste.</span>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-icon">🔄</div>
+              <div class="tip-content">
+                <strong>Valider</strong>
+                <span>Satisfait de votre sélection ? Allez en bas de la page pour passer à l'étape suivante !</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="closeNavigationHelpBtn">Compris, merci !</button>
+    </div>
+  </div>
+
+
+  <!-- Hidden modal window --> 
+  <div id="plantModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <span class="close" id="modalClose">&times;</span>
+      <div id="modalTitle"></div>
+      <div id="modalDetails"></div>
+      <button id="closeModalBtn">Fermer</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img src="static/images/leaf.png" alt="Logo Coup de Pousse" class="footer-logo">
+            <p class="footer-description">
+                Coup de Pousse est votre partenaire pour un jardinage réussi. Nous vous accompagnons dans la création d'un espace vert 
+                harmonieux et respectueux de l'environnement.
+            </p>
+        </div>
+
+        <div class="footer-links-section">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tool.html">L'outil</a></li>
+                <li><a href="about.html">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links-section">
+            <h3>Légal</h3>
+            <ul class="footer-links">
+                <li><a href="mentions.html">Mentions légales</a></li>
+                <li><a href="politics.html">Confidentialité</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Coup de Pousse — Tous droits réservés</p>
+        <div class="footer-legal">
+            <a href="mentions.html">Mentions légales</a>
+            <a href="politics.html">Politique de confidentialité</a>
+        </div>
+    </div>
+</footer>
+
+  <script src="static/js/tool.js"></script>
+
+</body>
+</html>

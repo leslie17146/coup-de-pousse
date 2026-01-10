@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <title>Coup de Pousse - L'outil</title> 
+    <link rel="stylesheet" href="static/css/map_generation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="static/images/leaf.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <section class="accueil">
+            <ul class="menu" id="radialMenu">
+                <div class="menu-button" onclick="toggleMenu()">
+                    <img src="static/images/leaf.png" alt="Menu">
+                </div>
+
+                <li class="menu-item"><a href="index.html"><img src="static/images/icons8-home-144.png" alt="Accueil"></a></li>
+                <li class="menu-item"><a href="tool.html"><img src="static/images/icons8-leaf-96.png" alt="L'outil"></a></li>
+                <li class="menu-item"><a href="about.html"><img src="static/images/icons8-information-96.png" alt="A propos"></a></li>
+            </ul>
+        </section>
+
+        <!-- Header -->
+        <header>
+            <h1>Plan de votre jardin</h1>
+            <p class="subtitle">Visualisez et téléchargez votre plan d'aménagement</p>
+        </header>
+
+        <main>
+            <div class="content-section">
+                <div id="plantInfo" class="info-card">
+                    <h3>Votre sélection</h3>
+                    <p><span id="plantList"></span></p>
+                </div>
+                </div>
+
+                <div id="statusMessage" class="status-card">
+                    <div class="status-content">
+                        <span class="status-icon">⏳</span>
+                        <span class="status-text">Génération du plan en cours...</span>
+                    </div>
+                </div>
+
+                <div id="confirmationCard" class="confirmation-card">
+                    <div class="confirmation-content">
+                        <div class="confirmation-icon">✅</div>
+                        <div class="confirmation-text">
+                            <h3>Votre plan est prêt !</h3>
+                            <p>Votre plan de jardin personnalisé a été généré avec succès.</p>
+                            <p class="confirmation-details"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Easiest solution for that this doesn't print on the user'screen : display: none" (I want to keep it in case, for a further use) -->
+                <div class="prompt-section" style="display: none;">
+                    <h3>📝 Prompt envoyé à Gemini</h3>
+                    <textarea id="prompt" rows="4" readonly></textarea>
+                </div>
+
+                <div class="response-section" style="display: none;">
+                    <h3>📊 Réponse JSON</h3>
+                    <div class="response-container">
+                        <pre id="result">La réponse apparaîtra ici...</pre>
+                    </div>
+                </div>
+
+                <div id="svg-container" class="svg-section">
+                    <h3 style="display: none;">Visualisation du plan</h3>  
+                    <div id="svg-output" class="svg-display" style="display: none;"></div> 
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="downloadPNG()">Télécharger le PNG</button>
+                        <button class="btn-secondary" onclick="window.history.back()">Retour à la sélection</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="static/images/leaf.png" alt="Logo Coup de Pousse" class="footer-logo">
+                <p class="footer-description">
+                    Coup de Pousse est votre partenaire pour un jardinage réussi. Nous vous accompagnons dans la création d'un espace vert 
+                    harmonieux et respectueux de l'environnement.
+                </p>
+            </div>
+
+            <div class="footer-links-section">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tool.html">L'outil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-section">
+                <h3>Légal</h3>
+                <ul class="footer-links">
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="politics.html">Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Coup de Pousse — Tous droits réservés</p>
+            <div class="footer-legal">
+                <a href="mentions.html">Mentions légales</a>
+                <a href="politics.html">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="static/js/config.js"></script>
+    
+    <script src="static/js/map_generation.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+</html>

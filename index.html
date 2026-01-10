@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <title>Coup de Pousse - Accueil</title> 
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="static/images/leaf.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <!-- <img src="static/images/Coup_de_pouSSe.png" alt="Coup de pousse" class="title-image"> -->
+    <h1 class="main-title">
+        <span class="title-gradient">Coup de Pousse</span>
+    </h1>
+    <h2 class="subtitle">OUTIL DE RECOMMANDATION DE PLANTATIONS INTELLIGENT</h2>
+</header>
+
+<section class="accueil">
+    <ul class="menu" id="radialMenu">
+        <div class="menu-button" onclick="toggleMenu()">
+            <img src="static/images/leaf.png" alt="Menu">
+        </div>
+
+        <li class="menu-item" data-tooltip="Accueil"><a href="index.html"><img src="static/images/icons8-home-144.png" alt="Accueil"></a></li>
+        <li class="menu-item" data-tooltip="L'outil"><a href="tool.html"><img src="static/images/icons8-leaf-96.png" alt="L'outil"></a></li>
+        <li class="menu-item" data-tooltip="Infos"><a href="about.html"><img src="static/images/icons8-information-96.png" alt="Infos"></a></li>
+    </ul>
+    
+
+    <div class="button-container">
+        <a href="tool.html" class="start">Commencer l'aventure ▷</a>
+        <button class="outline" onclick="scrollToHowItWorks()">Découvrir notre méthode ↓</button>
+    </div>
+</section>
+
+<section class="how-it-works">
+    <h2>Comment ça marche ?</h2>
+    <div class="steps">
+        <div class="step left">
+            <div class="number">1</div>
+            <p>Répondez à notre questionnaire.<br>
+            <span class="detail">Nous analysons votre environnement et vos préférences pour créer une sélection sur mesure.</span></p>
+        </div>
+        
+        <div class="step right">
+            <div class="number">2</div>
+            <p>Explorez notre base de plantes adaptées.<br>
+            <span class="detail">Personnalisez votre projet selon vos envies.</span></p>
+        </div>
+        
+        <div class="step left">
+            <div class="number">3</div>
+            <p>Téléchargez votre plan de jardinage complet.<br>
+            <span class="detail">Avec des conseils d'entretien personnalisés.</span></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img src="static/images/leaf.png" alt="Logo Coup de Pousse" class="footer-logo">
+            <p class="footer-description">
+                Coup de Pousse est votre partenaire pour un jardinage réussi. Nous vous accompagnons dans la création d'un espace vert 
+                harmonieux et respectueux de l'environnement.
+            </p>
+        </div>
+
+        <div class="footer-links-section">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tool.html">L'outil</a></li>
+                <li><a href="about.html">À propos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links-section">
+            <h3>Légal</h3>
+            <ul class="footer-links">
+                <li><a href="mentions.html">Mentions légales</a></li>
+                <li><a href="politics.html">Confidentialité</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Coup de Pousse — Tous droits réservés</p>
+        <div class="footer-legal">
+            <a href="mentions.html">Mentions légales</a>
+            <a href="politics.html">Politique de confidentialité</a>
+        </div>
+    </div>
+</footer>
+
+<script src="static/js/index.js"></script>
+
+</body>
+</html>
