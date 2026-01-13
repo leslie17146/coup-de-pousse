@@ -176,6 +176,10 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.content-section a {
+    color: #3A7F0D;
+}
+
 .highlight {
 background: linear-gradient(135deg, rgba(139, 195, 74, 0.15), rgba(58, 127, 13, 0.15));
 padding: 30px;
@@ -265,7 +269,7 @@ padding: 60px 40px;
 .website-button {
 display: inline-block;
 background: linear-gradient(135deg, #3A7F0D, #8BC34A);
-color: white;
+color: white !important;
 text-decoration: none;
 padding: 15px 35px;
 border-radius: 30px;
