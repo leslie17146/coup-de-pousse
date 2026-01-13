@@ -1,14 +1,11 @@
-# Fichiers sensibles
 .env
 .env.local
 
-# Fichiers de configuration
 static/js/config.js
 
-# Node.js
 node_modules/
 npm-debug.log*
 
-# Système
 .DS_Store
+
 Thumbs.db
