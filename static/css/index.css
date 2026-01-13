@@ -27,13 +27,9 @@ header {
 .main-title {
     position: relative;
     text-align: center;
-    margin: 2rem 0 1rem;
-    padding: 1.5rem 0;
-    font-family: 'Leckerli One', cursive;
+    font-family: 'Leckerli One';
     font-size: 6rem;
     margin: 0;
-    line-height: 1;
-    letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: 300;
 }
@@ -43,7 +39,8 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 200% 200%;
+    background-size: 100% 200%;
+    padding: 0.1rem 0.6rem;
 }
 
 @keyframes gradient-shift {
@@ -488,5 +485,4 @@ footer {
 
 .footer-legal a:hover {
     color: #8BC34A;
-}
 }
