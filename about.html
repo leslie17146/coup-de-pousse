@@ -43,10 +43,10 @@
         <main>
             <section class="content-section">
                 <h2>Notre histoire</h2>
-                <p>Coup de Pousse a émergé d'un projet scolaire de licence en data science. L'objectif était de répondre à un besoin exprimé par certaines personnées : un accompagnement gratuit autour du jardinage.</p>
+                <p>Coup de Pousse a émergé d'un projet scolaire de licence en data science. L'objectif était de répondre à un besoin exprimé par certaines personnes : un accompagnement gratuit autour du jardinage.</p>
                 
                 <div class="highlight">
-                    <p>Beaucoup de personnes souhaitent se lancer dans le jardinage mais se sentent découragées par le manque de connaissances. Coup de pousse est un projet de science des données qui a pour but de créer un outil simple, intuitif et personnalisé.</p>
+                    <p>Beaucoup de personnes souhaitent se lancer dans le jardinage mais se sentent découragées par le manque de connaissances. Coup de Pousse est un projet de science des données qui a pour but de créer un outil simple, intuitif et personnalisé.</p>
                 </div>
                 
                 <p>La transition écologique commence aussi par une réappropriation du sol et de ses vertus. En nous éloignant de la nature, nous avons perdu ce lien essentiel qui nous connecte à notre environnement. Coup de Pousse vise à recréer ce lien, une plante à la fois.</p>
@@ -75,18 +75,12 @@
 
             <section class="content-section">
                 <h2>Comprendre la conception</h2>
-                <p>Les données proviennent d’un jeu de 595 plantes disponible <a href="https://www.kaggle.com/datasets/aribashafaqat/plants-growth-and-care-recommendations" target="_blank">ici</a>. J’ai vérifié ces données, puis réalisé un travail de nettoyage et d’enrichissement : suppression des doublons, encodage des variables et ajout de nouvelles colonnes. Pour compléter ces informations, j’ai utilisé un <em>Large Language Model</em> (LLM), en itérant par petits groupes de plantes pour accélérer le traitement (parallélisation du LLM). Le jeu de données finale utilisé est disponible <a href="https://www.kaggle.com/datasets/leslie17146/plants-their-characteristics-and-care" target="_blank">ici</a>.</p>
+                <p>Les données proviennent d’un jeu de données composé de 595 plantes disponible <a href="https://www.kaggle.com/datasets/aribashafaqat/plants-growth-and-care-recommendations" target="_blank">ici</a>. J’ai vérifié ces données, puis réalisé un travail de nettoyage et d’enrichissement : suppression des doublons, encodage des variables et ajout de nouvelles colonnes. Pour compléter ces informations, j’ai utilisé un <em>Large Language Model</em> (LLM), en itérant par petits groupes de plantes pour accélérer le traitement (parallélisation du LLM). Le jeu de données final utilisé est disponible <a href="https://www.kaggle.com/datasets/leslie17146/plants-their-characteristics-and-care" target="_blank">ici</a>.</p>
                 <p>Les photos ont été récupérées via l’API Pixabay et stockées sur Cloudinary afin de ne pas ralentir le site. Les liens vers ces images ont été ajoutés automatiquement au fichier JSON contenant les données.</p>
                 <p>Le site propose un questionnaire interactif : les réponses sont comparées aux données du JSON grâce à une table de correspondance, et les plantes correspondantes s’affichent sous forme de cartes cliquables.</p>
                 <p>Une fois la sélection faite, les informations sont envoyées à Gemini 2.5 Flash Lite, un LLM léger et rapide. Il renvoie les coordonnées des plantes dans le jardin au format JSON. Ces coordonnées sont ensuite converties en SVG puis en PNG pour le téléchargement. Ce choix de passer par des coordonnées JSON plutôt que la génération directe d’images par IA permet de réduire l’empreinte écologique du projet.</p>
             </section>
 
-
-            <section class="content-section website-section">
-                <h2>Découvrez le site personnel de la créatrice</h2>
-                <p>Pour en savoir plus sur mon parcours, mes projets et mes autres réalisations, visitez mon site personnel.</p>
-                <a href="static/site_personnel.html" class="website-button">Visiter le site</a>
-            </section>
         </main>
     </div>
 
